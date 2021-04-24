@@ -39,5 +39,5 @@ function playAnimation () {
 			alt.clearInterval(interval)
 			native.taskPlayAnim(alt.Player.local.scriptID, dict, anim, 2.0, 2.0, -1, 1, 0, false, false, false)
 		}	
-	})
+	}, 1)
 }
