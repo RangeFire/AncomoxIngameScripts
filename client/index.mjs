@@ -34,6 +34,7 @@ function playAnimation () {
 	let dict = "amb@world_human_tourist_map@male@base"
 	let anim = "base"
 
+	native.requestAnimDict(dict)
 	let interval = alt.setInterval(() => {
 		if (native.hasAnimDictLoaded(dict)) {
 			alt.clearInterval(interval)
