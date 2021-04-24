@@ -31,6 +31,9 @@ function close () {
 }
 
 function playAnimation () {
+	if (alt.Player.local.vehicle) {
+		return
+	}
 	let dict = "amb@world_human_tourist_map@male@base"
 	let anim = "base"
 
