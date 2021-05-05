@@ -9,9 +9,9 @@ $(document).ready(function(){
 		}
 	});
 
-	document.onkeydown = function (data) {
-		if (data.which == 27 || data.which == 77) {
+	$(document).keydown((event) => {
+		if (event.which == 27 || event.which == 77) {
 			$.post('http://tablet/close', JSON.stringify({}));
 		}
-	};
+	})
 });
