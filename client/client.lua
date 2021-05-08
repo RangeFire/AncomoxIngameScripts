@@ -6,7 +6,7 @@ Citizen.CreateThread(function()
 			if (IsControlJustPressed(0, 244)) then
 				tabletStatus = not tabletStatus
 				SetNuiFocus(tabletStatus, tabletStatus)
-				SendNUIMessage({show = tabletStatus})
+				SendNUIMessage({show = tabletStatus, name = GetCurrentResourceName()})
 				playAnimation()
 			end
 
